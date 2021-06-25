@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,155 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: lightgray;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+}
+.flavors-cover {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+
+}
+.all-about {
+  display: none;
+}
+.flav-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+  display: block;
+}
+.flav-sidebar.active {
+  display: none;
+}
+.sidebar {
+  width: 100%;
+  height: 100%;
+
+}
+.flav-h2 {
+padding: 30px 10px 10px;
+height: 20%;
+}
+.flav-ul {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70%;
+  padding:0 10px;
+  margin-bottom: 5%;
+}
+
+
+@media only screen and (min-width: 768px){
+
+.flavors-cover {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+}
+.all-about {
+  display: block;
+}
+.flav-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 20%;
+  height: 100%;
+  z-index: 100;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+
+}
+.flav-h2 {
+padding: 30px 10px 10px;
+height: 20%;
+}
+.flav-ul {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70%;
+  padding:0 10px;
+  margin-bottom: 5%;
+}
+
+}
+  
+
+@media only screen and (min-width: 992px){
+
+  /** for flavors **/
+
+.flavors-cover {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  height: 50px;
+}
+.all-about {
+  display: block;
+}
+.flav-sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 20%;
+  height: 100%;
+  z-index: 100;
+}
+.sidebar {
+  width: 100%;
+  height: 100%;
+
+}
+.flav-h2 {
+padding: 30px 10px 10px;
+height: 20%;
+}
+.flav-ul {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70%;
+  padding:0 10px;
+  margin-bottom: 5%;
+}
+
 }
