@@ -10,7 +10,7 @@ import TrendImg3 from "./Images/flavors22.jpg";
 import TrendImg4 from "./Images/flavors24.jpg";
 import MenuCoverImg from "./Images/flavors28.jpg";
 import PromoImg from "./Images/flavors2.jpg";
-import EventImg from "./Images/flavors26.jpg";
+import EventImg from "./Images/flavors43.jpg";
 
 import { ArrowBackIosOutlined } from '@material-ui/icons';
 import { ArrowForwardIosOutlined } from '@material-ui/icons';
@@ -41,11 +41,11 @@ const Home = () => {
                 <div className="home-about">
                     <img src={AboutImg} alt="about Photo" className="home-about-photo" />
                     <div className="home-about-para-section">
-                        <h2>About Flavours Pub & Grill</h2>
+                        <h2>About Us</h2>
                         <div className="home-about-text">
-                            <p>Text</p>
+                            <p>Flavours Pub & Grill is a Restaurant located in the city of Livingstone, Along Lusaka road, Town Area in Zambia.We serve the Best food ever, at affordable prices. We also make the quickiest deliveries anywhere around Livingstone.Simply call or email us using our contacts in our contact section.We also offer attachments to catering students, with the ability to hire potential ones after their studies.</p>
                         </div>
-                        <Button variant="contained" color="primary" startIcon={<SaveIcon />}>Send</Button>
+                        <Button variant="contained" color="primary" startIcon={<SaveIcon />}>See More</Button>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ const Home = () => {
                         </Paper>
 
                     </div>
-                    <Button size="small" variant="outlined" startIcon={<SaveIcon />}>See More</Button>
+                    <Button size="small" variant="outlined" endIcon={<Favorite />}>2K</Button>
                 </div>
             </div>
             <div className="home-menu-section">

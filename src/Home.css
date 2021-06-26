@@ -78,6 +78,9 @@
     height: 300px;
     object-fit: cover;
 }
+.home-about-text {
+    padding: 10px;
+}
 .home-about-para-section {
     width: 100%;
     display: flex;
@@ -360,9 +363,8 @@ text-align: center;
     margin: 7px 4% 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
     height: 300px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .home-event-text {
     padding: 10px 4%;
@@ -511,6 +513,9 @@ text-align: center;
         width: 50%;
         height: 400px;
         object-fit: cover;
+    }
+    .home-about-text {
+        padding: 0px;
     }
     .home-about-para-section {
         width: 40%;
@@ -794,7 +799,7 @@ text-align: center;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         height: 300px;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
     .home-event-text {
         padding: 10px 5%;

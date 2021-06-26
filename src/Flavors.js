@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from "./Home";
+import About from "./About";
 import Image from "./Images/flavors1.jpg";
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
@@ -60,8 +61,10 @@ function Flavors() {
                     </div>
                 </Paper>
 
+
             </div>
             <Home />
+            <About />
         </div>
     )
 }
